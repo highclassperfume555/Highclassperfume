@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="HighClassPerfume — a modern luxury fragrance house crafting distinctive perfumes with rare botanical notes.">
+  <title>HighClassPerfume — Luxury Fragrance</title>
+
+  <!-- UIkit -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/css/uikit.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="uk-container uk-container-large">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="HighClassPerfume home">HighClassPerfume</a>
+
+        <div class="desktop-nav">
+          <a href="#story">The House</a>
+          <a href="#collection">Collection</a>
+          <a href="#experience">Fragrance</a>
+          <a href="#journal">Journal</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="icon-button" type="button" aria-label="Open search" id="searchToggle">
+            <span uk-icon="icon: search; ratio: .9"></span>
+          </button>
+          <a class="bag-link" href="#collection" aria-label="View collection">
+            <span uk-icon="icon: bag; ratio: .95"></span>
+            <span class="bag-count">0</span>
+          </a>
+          <button class="menu-button" type="button" uk-toggle="target: #mobileMenu" aria-label="Open menu">
+            <span uk-icon="icon: menu; ratio: 1.05"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="search-panel" id="searchPanel" hidden>
+        <label for="siteSearch">Search the collection</label>
+        <div class="search-row">
+          <input id="siteSearch" type="search" placeholder="Try “amber”, “rose”, or “woody”" autocomplete="off">
+          <button class="gold-button small" type="button" id="searchButton">Search</button>
+        </div>
+        <p class="search-result" id="searchResult" aria-live="polite"></p>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobileMenu" uk-offcanvas="overlay: true; flip: true">
+    <div class="uk-offcanvas-bar mobile-offcanvas">
+      <button class="uk-offcanvas-close" type="button" uk-close aria-label="Close menu"></button>
+      <div class="mobile-brand">HighClassPerfume</div>
+      <ul class="uk-nav uk-nav-default mobile-nav">
+        <li><a href="#story">The House</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#experience">Fragrance</a></li>
+        <li><a href="#journal">Journal</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="mobile-note">Modern fragrance, composed slowly.</p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero section-dark">
+      <div class="hero-glow"></div>
+      <div class="uk-container uk-container-large">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow gold-text">HighClassPerfume · Paris / London</p>
+            <h1>Leave a <em>beautiful</em> trace.</h1>
+            <p class="hero-lede">HighClassPerfume creates expressive perfumes where luminous florals meet warm woods,
+              mineral musks and unexpected skin-like warmth.</p>
+            <div class="hero-actions">
+              <a class="gold-button" href="#collection">Discover the collection <span
+                  uk-icon="icon: arrow-right; ratio: .8"></span></a>
+              <button class="text-button light-button" type="button" data-open-consultation>Find your signature <span
+                  uk-icon="icon: arrow-right; ratio: .8"></span></button>
+            </div>
+            <div class="hero-meta">
+              <span>01 / 06</span>
+              <span class="meta-line"></span>
+              <span>EAU DE PARFUM</span>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal reveal-delay-1">
+            <div class="hero-image-wrap reveal-image">
+              <img src="./images/bottle-2.jpeg"
+                alt="Luxury perfume bottles arranged in warm editorial lighting" class="hero-image"
+                fetchpriority="high">
+              <div class="hero-stamp" aria-hidden="true">
+                <span>HIGH CLASS</span>
+                <strong>HCP</strong>
+                <span>PARFUMS</span>
+              </div>
+            </div>
+            <div class="hero-caption">
+              <span>NO. 01 — L'OR D'OMBRE</span>
+              <span>50 ML / 1.7 FL OZ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="section section-ivory" id="story">
+      <div class="uk-container uk-container-large">
+        <div class="story-grid">
+          <div class="story-image reveal">
+            <div class="image-frame">
+              <img src="./images/bottle-1.jpeg"
+                alt="Perfume bottle beside a sculptural flower">
+            </div>
+            <span class="vertical-note">CRAFTED IN SMALL BATCHES · 2026</span>
+          </div>
+
+          <div class="story-copy reveal reveal-delay-1">
+            <p class="eyebrow">The HighClassPerfume house</p>
+            <h2>Luxury is felt<br><em>before it is seen.</em></h2>
+            <p>We compose fragrance like a piece of music: a precise opening, a textured heart and a lingering base that
+              becomes intimate with the skin.</p>
+            <p>Each formula balances responsibly sourced botanicals with modern perfumery materials, bottled in glass
+              designed to live beyond a single season.</p>
+
+            <div class="story-points">
+              <div><span class="point-number">01</span>
+                <div><strong>Rare ingredients</strong><small>Orris, saffron, natural oud &amp; luminous rose.</small>
+                </div>
+              </div>
+              <div><span class="point-number">02</span>
+                <div><strong>Slow composition</strong><small>Blended, rested and refined in small batches.</small></div>
+              </div>
+              <div><span class="point-number">03</span>
+                <div><strong>Conscious ritual</strong><small>Thoughtful packaging with refill-minded design.</small>
+                </div>
+              </div>
+            </div>
+
+            <a class="line-link" href="#experience">Discover our fragrance philosophy <span
+                uk-icon="icon: arrow-right; ratio: .8"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLECTION -->
+    <section class="section section-sand" id="collection">
+      <div class="uk-container uk-container-large">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">The collection</p>
+            <h2>Four signatures.<br><em>Infinite impressions.</em></h2>
+          </div>
+          <p class="heading-note">Eau de parfum · 50 ml<br>Composed for skin, not seasons.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal" data-search="amber woody saffron vanilla">
+            <div class="product-image">
+              <img src="./images/bottle-5.jpeg"
+                alt="HighClassPerfume No. 01 amber perfume bottle" loading="lazy">
+              <span class="product-label">BESTSELLER</span>
+              <button class="quick-view" type="button" data-product="l-or-dombre">Quick view</button>
+            </div>
+            <div class="product-info">
+              <div class="product-topline"><span>NO. 01</span><span>50 ML</span></div>
+              <h3>Noir Éclat</h3>
+              <p>Saffron · Amber · Vanilla · Cedar</p>
+              <div class="product-bottom"><strong>€185</strong><button class="bag-button" type="button" data-add>+ Add
+                  to bag</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-1" data-search="rose floral musk pink pepper">
+            <div class="product-image">
+              <img src="./images/bottle-6.jpeg"
+                alt="HighClassPerfume No. 02 rose perfume bottle" loading="lazy">
+              <span class="product-label">NEW</span>
+              <button class="quick-view" type="button" data-product="rose-minuit">Quick view</button>
+            </div>
+            <div class="product-info">
+              <div class="product-topline"><span>NO. 02</span><span>50 ML</span></div>
+              <h3>Velours Rose</h3>
+              <p>Damask Rose · Pink Pepper · Musk</p>
+              <div class="product-bottom"><strong>€165</strong><button class="bag-button" type="button" data-add>+ Add
+                  to bag</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal-delay-2" data-search="neroli citrus orange blossom vetiver">
+            <div class="product-image">
+              <img src="./images/bottle-7.jpeg"
+                alt="HighClassPerfume No. 03 citrus perfume bottle" loading="lazy">
+              <button class="quick-view" type="button" data-product="sillage-solaire">Quick view</button>
+            </div>
+            <div class="product-info">
+              <div class="product-topline"><span>NO. 03</span><span>50 ML</span></div>
+              <h3>Santal Lumière</h3>
+              <p>Neroli · Bergamot · Orange Blossom · Vetiver</p>
+              <div class="product-bottom"><strong>€155</strong><button class="bag-button" type="button" data-add>+ Add
+                  to bag</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-search="oud leather incense sandalwood smoky">
+            <div class="product-image">
+              <img src="./images/bottle-4.jpeg"
+                alt="HighClassPerfume No. 04 dark woody perfume bottle" loading="lazy">
+              <span class="product-label">INTENSE</span>
+              <button class="quick-view" type="button" data-product="velours-noir">Quick view</button>
+            </div>
+            <div class="product-info">
+              <div class="product-topline"><span>NO. 04</span><span>50 ML</span></div>
+              <h3>Maison Noire</h3>
+              <p>Black Oud · Incense · Suede · Sandalwood</p>
+              <div class="product-bottom"><strong>€195</strong><button class="bag-button" type="button" data-add>+ Add
+                  to bag</button></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="collection-banner reveal">
+          <div>
+            <p class="eyebrow gold-text">The discovery ritual</p>
+            <h3>Try the four signatures<br>before choosing your bottle.</h3>
+          </div>
+          <button class="outline-gold" type="button" data-open-consultation>Start a fragrance consultation <span
+              uk-icon="icon: arrow-right; ratio: .8"></span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section-dark experience" id="experience">
+      <div class="uk-container uk-container-large">
+        <div class="experience-head reveal">
+          <p class="eyebrow gold-text">The fragrance experience</p>
+          <h2>Three acts.<br><em>One unforgettable trail.</em></h2>
+        </div>
+
+        <div class="note-grid">
+          <article class="note-card reveal">
+            <span class="note-index">01</span>
+            <div class="note-icon">TOP</div>
+            <h3>The first light</h3>
+            <p>Bright citrus, pink pepper and saffron lift from the skin in the first few minutes.</p>
+            <div class="note-tags"><span>Bergamot</span><span>Saffron</span><span>Pink Pepper</span></div>
+          </article>
+          <article class="note-card featured reveal reveal-delay-1">
+            <span class="note-index">02</span>
+            <div class="note-icon">HEART</div>
+            <h3>The living heart</h3>
+            <p>Rose absolute, iris and orange blossom create a soft floral tension that feels distinctly modern.</p>
+            <div class="note-tags"><span>Rose</span><span>Iris</span><span>Neroli</span></div>
+          </article>
+          <article class="note-card reveal reveal-delay-2">
+            <span class="note-index">03</span>
+            <div class="note-icon">BASE</div>
+            <h3>The lasting trace</h3>
+            <p>Amber, clean musk and polished woods stay close to the skin for a long, quiet finish.</p>
+            <div class="note-tags"><span>Amber</span><span>Musk</span><span>Cedar</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL -->
+    <section class="editorial section-ivory">
+      <div class="editorial-image reveal">
+        <img src="./images/bird.jpeg"
+          alt="Perfume editorial still life with flowers and warm light" loading="lazy">
+      </div>
+      <div class="editorial-copy reveal reveal-delay-1">
+        <p class="eyebrow">An intimate ritual</p>
+        <h2>Fragrance should<br><em>meet the skin.</em></h2>
+        <p>One spray on the pulse points. Let the warmth of your skin do the rest. HighClassPerfume is designed to
+          evolve rather than announce itself.</p>
+        <div class="quote-mark">“</div>
+        <blockquote>Wear it close. Let them discover it when they come closer.</blockquote>
+        <span class="signature">— The HighClassPerfume Atelier</span>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section section-sand testimonials">
+      <div class="uk-container uk-container-medium">
+        <div class="section-heading centered reveal">
+          <div>
+            <p class="eyebrow">The HighClassPerfume circle</p>
+            <h2>Loved on the skin.</h2>
+          </div>
+        </div>
+
+        <div uk-slider="finite: true">
+          <div class="uk-position-relative">
+            <ul class="uk-slider-items uk-child-width-1-1" uk-height-match="target: > li">
+              <li>
+                <article class="testimonial">
+                  <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                  <p>“Noir Éclat is warm without being heavy. Three people asked what I was wearing on the first day.”
+                  </p>
+                  <strong>Amelia R.</strong><span>Verified customer · London</span>
+                </article>
+              </li>
+              <li>
+                <article class="testimonial">
+                  <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                  <p>“Velours Rose feels like silk and fresh flowers after rain. Elegant, subtle and incredibly
+                    addictive.”</p>
+                  <strong>Sofia M.</strong><span>Verified customer · Milan</span>
+                </article>
+              </li>
+              <li>
+                <article class="testimonial">
+                  <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                  <p>“The discovery set changed the way I choose perfume. Santal Lumière became my everyday signature.”
+                  </p>
+                  <strong>Daniel K.</strong><span>Verified customer · Copenhagen</span>
+                </article>
+              </li>
+            </ul>
+            <a class="slider-arrow prev" href="#" uk-slider-item="previous" aria-label="Previous testimonial"><span
+                uk-icon="icon: arrow-left"></span></a>
+            <a class="slider-arrow next" href="#" uk-slider-item="next" aria-label="Next testimonial"><span
+                uk-icon="icon: arrow-right"></span></a>
+          </div>
+          <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-medium-top"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNAL -->
+    <section class="section section-ivory" id="journal">
+      <div class="uk-container uk-container-large">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">From the journal</p>
+            <h2>Notes on <em>fragrance.</em></h2>
+          </div>
+          <a class="line-link" href="#contact">Read the journal <span uk-icon="icon: arrow-right; ratio: .8"></span></a>
+        </div>
+        <div class="journal-grid">
+          <article class="journal-card reveal">
+            <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=1000&q=82"
+              alt="Perfume and flowers editorial scene" loading="lazy">
+            <p class="journal-meta">ATELIER / 04.09.26</p>
+            <h3>Why amber feels like a second skin.</h3>
+            <a href="#contact" class="line-link">Read story <span uk-icon="icon: arrow-right; ratio: .8"></span></a>
+          </article>
+          <article class="journal-card reveal reveal-delay-1">
+            <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1000&q=82"
+              alt="Botanical ingredients used in perfumery" loading="lazy">
+            <p class="journal-meta">INGREDIENTS / 28.08.26</p>
+            <h3>Inside the atelier: the art of choosing rose.</h3>
+            <a href="#contact" class="line-link">Read story <span uk-icon="icon: arrow-right; ratio: .8"></span></a>
+          </article>
+          <article class="journal-card reveal reveal-delay-2">
+            <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=1000&q=82"
+              alt="Dark luxury perfume bottle" loading="lazy">
+            <p class="journal-meta">RITUAL / 19.08.26</p>
+            <h3>How to make your fragrance last longer.</h3>
+            <a href="#contact" class="line-link">Read story <span uk-icon="icon: arrow-right; ratio: .8"></span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section-dark" id="contact">
+      <div class="uk-container uk-container-large">
+        <div class="contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow gold-text">Come closer</p>
+            <h2>Find the scent<br><em>that feels like you.</em></h2>
+            <p>Tell us what you love, where you are travelling, or simply what you want to feel. Our fragrance team will
+              reply with a considered recommendation.</p>
+            <div class="contact-details">
+              <a href="mailto:atelier@highclassperfume.com">atelier@highclassperfume.com</a>
+              <span>Paris · London · Worldwide</span>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal reveal-delay-1">
+            <form id="contactForm" class="luxury-form" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required>
+                  <span class="field-error"></span>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required>
+                  <span class="field-error"></span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="phone">Phone number <span>(optional)</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel">
+                <span class="field-error"></span>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required
+                  placeholder="Tell us about the fragrances you love..."></textarea>
+                <span class="field-error"></span>
+              </div>
+              <button class="gold-button form-submit" type="submit">Send enquiry <span
+                  uk-icon="icon: arrow-right; ratio: .8"></span></button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="uk-container uk-container-large">
+      <div class="footer-top">
+        <div>
+          <a class="brand footer-brand" href="#top">HighClassPerfume</a>
+          <p>Modern fragrance, composed slowly.<br>Made for the moments between words.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-brand-mobile"><span>HighClassPerfume</span><small>Luxury fragrance, beautifully
+              composed.</small></div>
+          <div><span>Explore</span><a href="#story">The House</a><a href="#collection">Collection</a><a
+              href="#experience">Fragrance</a></div>
+          <div><span>Connect</span><a href="#contact">Contact</a><a
+              href="mailto:atelier@highclassperfume.com">Email</a><a href="#top">Instagram</a></div>
+          <div><span>Visit</span>
+            <p>14 Rue de l'Atelier<br>75003 Paris, France</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> HighClassPerfume. All rights reserved.</span>
+        <span>Privacy · Terms · Accessibility</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Consultation / promotion modal -->
+  <div id="consultationModal" uk-modal="esc-close: true; bg-close: true">
+    <div class="uk-modal-dialog uk-modal-body premium-modal" role="dialog" aria-modal="true"
+      aria-labelledby="consultationTitle">
+      <button class="uk-modal-close-default modal-close" type="button" uk-close aria-label="Close"></button>
+      <div class="modal-layout">
+        <div class="modal-image">
+          <img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=900&q=85"
+            alt="Elegant perfume bottle and flower" loading="lazy">
+        </div>
+        <div class="modal-copy">
+          <p class="eyebrow gold-text">HighClassPerfume discovery ritual</p>
+          <h2 id="consultationTitle">Your signature,<br><em>carefully chosen.</em></h2>
+          <p>Receive a complimentary three-minute fragrance consultation and a personalised recommendation from our
+            atelier.</p>
+          <ul class="modal-list">
+            <li><span>01</span> Tell us the mood you want to create.</li>
+            <li><span>02</span> We match your preferences to our signatures.</li>
+            <li><span>03</span> Receive your recommendation by email.</li>
+          </ul>
+          <a href="#contact" class="gold-button uk-modal-close">Start my consultation <span
+              uk-icon="icon: arrow-right; ratio: .8"></span></a>
+          <p class="modal-small">No account required · No obligation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product detail modal -->
+  <div id="productModal" uk-modal="esc-close: true; bg-close: true">
+    <div class="uk-modal-dialog uk-modal-body premium-modal product-modal">
+      <button class="uk-modal-close-default modal-close" type="button" uk-close aria-label="Close"></button>
+      <div class="product-modal-layout">
+        <div class="modal-product-image"><img id="modalProductImage" src="" alt=""></div>
+        <div class="modal-copy">
+          <p class="eyebrow" id="modalProductNo"></p>
+          <h2 id="modalProductName"></h2>
+          <p id="modalProductDescription"></p>
+          <div class="modal-notes" id="modalProductNotes"></div>
+          <div class="modal-price" id="modalProductPrice"></div>
+          <button class="gold-button" type="button" id="modalAddButton">Add to bag <span
+              uk-icon="icon: bag; ratio: .8"></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="toast" id="toast" role="status" aria-live="polite"></div> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit-icons.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
